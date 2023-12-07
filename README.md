@@ -1,1 +1,3 @@
-# mental_health_visualization
+# D3 Project Starter Template
+
+![Local Image](thumbnail.png)
