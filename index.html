@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Are You OK University Student?</title>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="data:;base64,iVBORwOKGO=" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Add HTML content, SVG drawing area, dropdown... -->
+		<div class="heading" style="text-align: left">
+			<h1>Are You OK University Student ?</h1>
+			<div>
+				<img
+					src="data/images/1.png"
+					alt="heading-image"
+					height="220"
+				/>
+			</div>
+		</div>
+		<div class="row-1">
+			<div class="left-1">
+				<p>In recent years, the mental health of university students has become a growing concern.
+				The demands and challenges associated with higher education often take a toll on students' well-being.
+				Numerous factors intertwine with students' mental health, presenting a multifaceted landscape.<p/>
+				Our visualizations aspire to provide users with valuable insights into prevalent stressors,
+				coping mechanisms, and dynamic trends in mental well-being. Armed with this comprehensive understanding,
+				users can collaboratively devise targeted interventions, create proactive support initiatives,
+				and cultivate an environment conducive to enhanced academic success.
+
+			</div>
+			<div class="right-1"><svg id="dot-matrix"></svg></div>
+		</div>
+		<div class="row-3">
+			<div><svg id="heat-map"></svg></div>
+		</div>
+		<div class="row-2">
+			<div class="left-2">
+				<div id="tree-mapping" class="chart"></div>
+			</div>
+			<div class="right-2"><svg id="bar-chart"></svg></div>
+		</div>
+
+		<div class="row-4">
+			<div id="heatmap-multi-chart-container">
+				<div id="heatmap-multi-chart-title">
+					Course Influence on Well-being Factors
+				</div>
+				<div id="view-option-container">
+					<div id="view-option">
+						<input
+							type="radio"
+							id="lollipopsView"
+							name="view"
+							value="lollipopsView"
+							checked
+						/>
+						<label for="lollipopsView"
+							>Lollipops View</label
+						>
+					</div>
+					<div id="view-option">
+						<input
+							type="radio"
+							id="overallView"
+							name="view"
+							value="Overall"
+						/>
+						<label for="overallView">Overall View</label>
+					</div>
+				</div>
+				<div><svg id="heatmap-circle-chart"></svg></div>
+				<div id="mini-bar-container">
+					<div id="mini-bar-row">
+						<div id="mini-bar-chart-level">
+							<p id="mini-bar-chart-y-label">High</p>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-high-sleep"></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-high-physical"
+							></svg>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-high-diet"></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-high-social"
+							></svg>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-high-extra"></svg>
+						</div>
+					</div>
+					<div id="mini-bar-row">
+						<div id="mini-bar-chart-level">
+							<p id="mini-bar-chart-y-label">
+								Moderate
+							</p>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-moderate-sleep"
+							></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-moderate-physical"
+							></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-moderate-diet"
+							></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-moderate-social"
+							></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-moderate-extra"
+							></svg>
+						</div>
+					</div>
+					<div id="mini-bar-row">
+						<div id="mini-bar-chart-level">
+							<p id="mini-bar-chart-y-label">Low</p>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-low-sleep"></svg>
+						</div>
+						<div>
+							<svg
+								id="mini-bar-chart-low-physical"
+							></svg>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-low-diet"></svg>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-low-social"></svg>
+						</div>
+						<div>
+							<svg id="mini-bar-chart-low-extra"></svg>
+						</div>
+					</div>
+					<div id="mini-bar-row">
+						<div id="mini-bar-chart-space">
+							<p id="mini-bar-chart-space"></p>
+						</div>
+						<div id="mini-bar-chart-attribute">
+							Sleeping Quality
+						</div>
+						<div id="mini-bar-chart-attribute">
+							Physical Activity
+						</div>
+						<div id="mini-bar-chart-attribute">
+							Diet Quality
+						</div>
+						<div id="mini-bar-chart-attribute">
+							Social Support
+						</div>
+						<div id="mini-bar-chart-attribute">
+							Extracurricular
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="tooltip"></div>
+
+		<!-- D3 bundle -->
+		<script src="js/d3.v6.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Our JS code -->
+		<script src="js/dotMatrix.js"></script>
+		<script src="js/heatMap.js"></script>
+		<script src="js/mini-barchart.js"></script>
+		<script src="js/heatmap-circle.js"></script>
+		<script src="js/treeMap.js"></script>
+		<script src="js/barChart.js"></script>
+		<script src="js/dataProcessor.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
