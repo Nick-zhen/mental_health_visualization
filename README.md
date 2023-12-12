@@ -1,3 +1,2 @@
-# D3 Project Starter Template
-
+# D3 Project 
 ![Local Image](thumbnail.png)
